@@ -1,0 +1,13 @@
+# Node modules and build outputs
+node_modules/
+dist/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+
+# IDE-specific or system files
+.vscode/
+.DS_Store
