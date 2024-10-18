@@ -1,5 +1,5 @@
 {
-    "name": "webTool",
+    "name": "webtool",
     "version": "1.0.0",
     "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls, and form data handling.",
     "main": "dist/index.js",
