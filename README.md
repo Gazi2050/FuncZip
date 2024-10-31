@@ -8,7 +8,6 @@ A utility library for common web development tasks, providing essential function
 - **Object Utilities**: Helpful methods for working with objects.
 - **String Utilities**: String manipulation utilities like trimming, formatting, etc.
 - **API Helpers**: Pre-built functions for making HTTP requests (GET, POST, PUT, PATCH).
-- **Form Data Handling**: Utilities to easily work with form data in JavaScript.
 
 ## Installation
 
