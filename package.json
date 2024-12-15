@@ -1,11 +1,16 @@
 {
     "name": "webtool",
-    "version": "1.0.0",
-    "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls, and form data handling.",
+    "version": "0.0.1",
+    "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.",
+    "type": "module",
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "homepage": "https://github.com/Gazi2050/webTool.js",
     "repository": {
-        "url": "https://github.com/Gazi2050/webTool.js"
+        "url": "git+https://github.com/Gazi2050/webTool.js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Gazi2050/webTool.js/issues"
     },
     "scripts": {
         "build": "tsc",
@@ -13,6 +18,9 @@
         "test": "jest",
         "prepare": "npm run build"
     },
+    "files": [
+        "dist/"
+    ],
     "keywords": [
         "utility",
         "javascript",
