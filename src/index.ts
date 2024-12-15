@@ -1,1 +1,1 @@
-console.log("hello world");
+export * as array from './array/array';
