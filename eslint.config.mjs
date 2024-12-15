@@ -2,7 +2,7 @@ import globals from "globals";
 import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import pluginJs from "@eslint/js";
-//test file path => "test/**/*.ts"
+
 export default [
   {
     files: ["src/**/*.ts"], // Target TypeScript files in src and test folders

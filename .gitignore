@@ -1,6 +1,7 @@
 # Node modules and build outputs
 node_modules/
 dist/
+coverage/
 
 # TypeScript build info
 *.tsbuildinfo
