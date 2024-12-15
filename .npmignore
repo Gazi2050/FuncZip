@@ -1,7 +1,7 @@
 # Exclude test files and TypeScript source files
 test/
 src/
-
+coverage/
 # Exclude config and dev files
 tsconfig.json
 .eslintrc.json
