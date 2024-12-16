@@ -1,4 +1,4 @@
-# webTool.js
+# FuncZip
 
 A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.
 
@@ -14,4 +14,4 @@ A utility library for common web development tasks, providing essential function
 Install the package via npm:
 
 ```bash
-npm install webTool
+npm install funczip
