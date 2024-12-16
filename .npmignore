@@ -6,7 +6,8 @@ coverage/
 tsconfig.json
 .eslintrc.json
 jest.config.js
-
+eslint.config.mjs
+rollup.config.mjs
 # Exclude git-related files
 .git
 .gitignore

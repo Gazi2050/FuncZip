@@ -1,25 +1,26 @@
 {
     "compilerOptions": {
-        "target": "ES2020", // Output JavaScript targeting ES2020
-        "module": "CommonJS", // Use CommonJS module system
+        "target": "ES2020", // Keep output JavaScript targeting ES2020
+        "module": "ESNext", // Use ESNext for module system (better for Rollup)
         "declaration": true, // Generate .d.ts files
-        "outDir": "./dist", // Output directory
+        "outDir": "./dist", // Output directory for compiled files
         "rootDir": "./src", // Root directory for input files
         "strict": true, // Enable strict type-checking
         "esModuleInterop": true, // Interoperability with CommonJS
         "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
         "skipLibCheck": true, // Skip type checking of declaration files
-        "noImplicitAny": true, // Disallow usage of any type
+        "noImplicitAny": true, // Disallow usage of the 'any' type
         "moduleResolution": "node", // Use Node.js style module resolution
         "strictNullChecks": true, // Enable strict null checks
-        "sourceMap": true // Generate source maps for debugging
+        "sourceMap": true, // Generate source maps for debugging
+        "declarationDir": "./dist" // Ensure declaration files are placed in dist
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts" // Include all TypeScript files in the src directory
     ],
     "exclude": [
-        "node_modules",
-        "test",
-        "dist"
+        "node_modules", // Exclude node_modules
+        "test", // Exclude the test directory
+        "dist" // Exclude the dist directory (since it's generated)
     ]
 }
