@@ -1,6 +1,6 @@
 {
     "name": "funczip",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.",
     "main": "dist/index.js",
     "homepage": "https://github.com/Gazi2050/FuncZip",
