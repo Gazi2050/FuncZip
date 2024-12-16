@@ -1,6 +1,6 @@
 {
     "name": "funczip",
-    "version": "0.0.2-alpha.0",
+    "version": "0.0.2-alpha.1",
     "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
