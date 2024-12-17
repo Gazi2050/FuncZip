@@ -1,3 +1,5 @@
+import { ValueExtractor } from "./arrayTypes";
+
 export function chunkArray<T>(arr: T[], size: number): T[][] {
     const result: T[][] = [];
 
@@ -25,4 +27,28 @@ export function shuffleArray<T>(arr: T[]): T[] {
         [shuffleArray[i], shuffleArray[j]] = [shuffleArray[j], shuffleArray[i]];
     }
     return shuffleArray;
+}
+
+export function uniqueByKey<T>(
+    arr: T[],
+    keyOrExtractor: keyof T | ValueExtractor<T>
+): T[] {
+    const seen = new Set<unknown>();
+    return arr.filter(item => {
+        const value = typeof keyOrExtractor === "function"
+            ? keyOrExtractor(item)
+            : keyOrExtractor
+                .toString()
+                .split(".")
+                .reduce<unknown>((acc, part) => {
+                    if (acc && typeof acc === "object" && part in acc) {
+                        return (acc as Record<string, unknown>)[part];
+                    }
+                    return undefined;
+                }, item as Record<string, unknown>);
+
+        if (seen.has(value)) return false;
+        seen.add(value);
+        return true;
+    });
 }

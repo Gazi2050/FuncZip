@@ -1,0 +1,1 @@
+export type ValueExtractor<T> = (item: T) => unknown;
