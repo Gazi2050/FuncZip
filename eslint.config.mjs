@@ -5,7 +5,7 @@ import pluginJs from "@eslint/js";
 
 export default [
   {
-    files: ["src/**/*.ts"], // Target TypeScript files in src and test folders
+    files: ["src/**/*.ts"], // Target TypeScript files in src folders
     languageOptions: {
       parser: tsParser,
       globals: globals.node,

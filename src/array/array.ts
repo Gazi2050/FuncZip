@@ -31,9 +31,10 @@ export function shuffleArray<T>(arr: T[]): T[] {
 
 export function uniqueByKey<T>(
     arr: T[],
-    keyOrExtractor: keyof T | ValueExtractor<T>
+    keyOrExtractor: keyof T | string | ValueExtractor<T>
 ): T[] {
     const seen = new Set<unknown>();
+
     return arr.filter(item => {
         const value = typeof keyOrExtractor === "function"
             ? keyOrExtractor(item)
