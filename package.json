@@ -1,9 +1,9 @@
 {
     "name": "funczip",
-    "version": "0.0.5",
+    "version": "0.0.2-alpha.0",
     "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.",
-    "type": "module",
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "homepage": "https://github.com/Gazi2050/FuncZip",
     "repository": {
         "url": "https://github.com/Gazi2050/FuncZip"

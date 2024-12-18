@@ -43,6 +43,6 @@ export default {
         },
     ],
     plugins: [
-        typescript({ tsconfig: './tsconfig.json' }), // Use TypeScript plugin to handle .ts files
+        typescript({ tsconfig: './tsconfig.build.json' }), // Use TypeScript plugin to handle .ts files
     ],
 };
