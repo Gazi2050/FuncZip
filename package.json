@@ -1,6 +1,6 @@
 {
     "name": "funczip",
-    "version": "0.0.2-alpha.0",
+    "version": "0.0.6",
     "description": "A utility library for common web development tasks, providing essential functions for arrays, objects, strings, API calls.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "scripts": {
         "build": "rollup -c rollup.config.mjs",
         "lint": "eslint \"src/**/*.ts\" --ignore-pattern dist/",
-        "test": "jest"
+        "test": "jest",
+        "array": "ts-node test/array/array.test.ts"
     },
     "keywords": [
         "javascript",
