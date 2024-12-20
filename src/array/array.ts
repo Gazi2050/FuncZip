@@ -8,7 +8,7 @@ export function chunkArray<T>(arr: T[], size: number): T[][] {
         result.push(chunk);
     }
     return result;
-}
+};
 
 export function averageArray(arr: number[]): number | null {
     if (arr.length === 0) {
@@ -18,7 +18,7 @@ export function averageArray(arr: number[]): number | null {
     const average: number = sum / arr.length;
 
     return average;
-}
+};
 
 export function shuffleArray<T>(arr: T[]): T[] {
     const shuffleArray = [...arr];
@@ -27,7 +27,7 @@ export function shuffleArray<T>(arr: T[]): T[] {
         [shuffleArray[i], shuffleArray[j]] = [shuffleArray[j], shuffleArray[i]];
     }
     return shuffleArray;
-}
+};
 
 export function uniqueByKey<T>(
     arr: T[],
@@ -52,4 +52,14 @@ export function uniqueByKey<T>(
         seen.add(value);
         return true;
     });
-}
+};
+
+export function difference<T>(arr1: T[], arr2: T[], symmetric: boolean = false): T[] {
+    const set1 = new Set(arr1);
+    const set2 = new Set(arr2);
+
+    const diff1 = arr1.filter(item => !set2.has(item));
+    const diff2 = arr2.filter(item => !set1.has(item));
+
+    return symmetric ? [...diff1, ...diff2] : diff1;
+};
