@@ -22,11 +22,10 @@
         "test": "jest"
     },
     "keywords": [
-        "FuncZip",
-        "utility",
-        "functions",
         "javascript",
         "typescript",
+        "functions",
+        "utility-library",
         "web development"
     ],
     "author": "gazi2050",
