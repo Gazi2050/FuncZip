@@ -3,11 +3,11 @@ test/
 src/
 coverage/
 # Exclude config and dev files
-tsconfig.json
-.eslintrc.json
-jest.config.js
 eslint.config.mjs
+jest.config.js
 rollup.config.mjs
+tsconfig.build.json
+tsconfig.json
 # Exclude git-related files
 .git
 .gitignore
