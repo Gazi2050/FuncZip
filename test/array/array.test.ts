@@ -1,5 +1,7 @@
-import { chunkArray, averageArray, shuffleArray, uniqueByKey } from "../../src/array/array"
+import { chunkArray, averageArray, shuffleArray, uniqueByKey, difference } from "../../src/array/array"
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arr1 = [1, 2, 3, 4, 5, 6]
+const arr2 = [2, 4, 6, 8, 9, 10]
 const obj1 = [
     { id: 1, name: "Alice" },
     { id: 2, name: "Bob" },
@@ -24,9 +26,14 @@ const testUniqueByKey1 = uniqueByKey(obj1, "name");
 const testUniqueByKey2 = uniqueByKey(obj2, "category.id");
 //Unique by Custom Value Extractor Function
 const testUniqueByKey3 = uniqueByKey(obj3, (employee) => employee.name);
+//Basic Difference
+const testDifference1 = difference(arr1, arr2);
+//Symmetric Difference
+const testDifference2 = difference(arr1, arr2, true);
 console.log(testChunkArray);
 console.log(testAverageArray);
 console.log(testShuffleArray);
-console.log(testUniqueByKey1)
-console.log(testUniqueByKey2)
-console.log(testUniqueByKey3)
+console.log(testUniqueByKey1);
+console.log(testUniqueByKey2);
+console.log(testDifference1);
+console.log(testDifference2);
