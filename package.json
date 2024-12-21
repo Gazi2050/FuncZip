@@ -20,7 +20,8 @@
         "build": "rollup -c rollup.config.mjs",
         "lint": "eslint \"src/**/*.ts\" --ignore-pattern dist/",
         "test": "jest",
-        "array": "ts-node test/array/array.test.ts"
+        "array": "ts-node test/array/array.test.ts",
+        "object": "ts-node test/object/object.test.ts"
     },
     "keywords": [
         "javascript",
