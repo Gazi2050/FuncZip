@@ -5,25 +5,25 @@ import pluginJs from "@eslint/js";
 
 export default [
   {
-    files: ["src/**/*.ts"], // Target TypeScript files in src folders
+    files: ["src/**/*.ts"],
     languageOptions: {
       parser: tsParser,
       globals: globals.node,
     },
     plugins: {
-      "@typescript-eslint": tsPlugin, // Include TypeScript ESLint plugin
+      "@typescript-eslint": tsPlugin,
     },
     rules: {
-      "no-console": "error", // Disallow console.log
-      "@typescript-eslint/no-unused-vars": "error", // Disallow unused variables
-      "no-var": "error", // Disallow 'var', use 'let' or 'const' instead
-      "@typescript-eslint/no-explicit-any": "error", // Disallow the 'any' type
-      "no-duplicate-imports": "error", // Disallow duplicate imports
-      "semi": ["error", "always"], // Require semicolons
+      "no-console": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-var": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "no-duplicate-imports": "error",
+      "semi": ["error", "always"],
     },
   },
   {
-    files: ["**/*.{js,mjs,cjs,ts}"], // Default configuration for all files
+    files: ["**/*.{js,mjs,cjs,ts}"],
     languageOptions: {
       globals: globals.node,
     },

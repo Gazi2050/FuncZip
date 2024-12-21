@@ -2,12 +2,14 @@
 test/
 src/
 coverage/
+
 # Exclude config and dev files
 eslint.config.mjs
 jest.config.js
 rollup.config.mjs
 tsconfig.build.json
 tsconfig.json
+
 # Exclude git-related files
 .git
 .gitignore

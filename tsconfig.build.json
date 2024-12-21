@@ -1,25 +1,25 @@
 {
     "compilerOptions": {
-        "target": "ES2020", // Output JavaScript targeting ES2020
-        "module": "ESNext", // Use ESNext module system for ESM output
-        "declaration": true, // Generate .d.ts files for TypeScript declarations
-        "outDir": "./dist", // Specify the output directory for compiled files
-        "rootDir": "./src", // Root directory of input TypeScript files
-        "strict": true, // Enable strict type-checking options
-        "esModuleInterop": true, // Allow default imports from CommonJS modules
-        "forceConsistentCasingInFileNames": true, // Ensure case-sensitive imports
-        "skipLibCheck": true, // Skip type-checking declaration files for speed
-        "noImplicitAny": true, // Disallow variables with implicit `any` type
-        "moduleResolution": "node", // Resolve modules in Node.js style
-        "strictNullChecks": true, // Treat `null` and `undefined` strictly
-        "sourceMap": true // Generate source maps for easier debugging
+        "target": "ES2020",
+        "module": "ESNext",
+        "declaration": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "sourceMap": true
     },
     "include": [
-        "src/**/*.ts" // Include all TypeScript files in the src directory
+        "src/**/*.ts"
     ],
     "exclude": [
-        "node_modules", // Exclude dependencies
-        "test", // Exclude test files from builds
-        "dist" // Exclude the output directory
+        "node_modules",
+        "test",
+        "dist"
     ]
 }

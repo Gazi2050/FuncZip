@@ -1,18 +1,18 @@
 {
     "compilerOptions": {
-        "target": "ES2020", // Output JavaScript targeting ES2020
-        "module": "Commonjs", // Use CommonJS module system
-        "declaration": true, // Generate .d.ts files
-        "outDir": "./dist", // Output directory
-        "rootDir": "./src", // Root directory for input files
-        "strict": true, // Enable strict type-checking
-        "esModuleInterop": true, // Interoperability with CommonJS
-        "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
-        "skipLibCheck": true, // Skip type checking of declaration files
-        "noImplicitAny": true, // Disallow usage of any type
-        "moduleResolution": "node", // Use Node.js style module resolution
-        "strictNullChecks": true, // Enable strict null checks
-        "sourceMap": true // Generate source maps for debugging
+        "target": "ES2020",
+        "module": "Commonjs",
+        "declaration": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "sourceMap": true
     },
     "include": [
         "src/**/*.ts"
