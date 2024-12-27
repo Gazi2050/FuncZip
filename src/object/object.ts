@@ -1,10 +1,9 @@
-import { CustomMergeFunction, MergeType } from "./objectTypes";
+import { MergeType } from "./objectTypes";
 
 export function mergeObjects(
     obj1: Record<string, string | number>,
     obj2: Record<string, string | number>,
-    mergeType: MergeType,
-    customMergeFn?: CustomMergeFunction
+    mergeType: MergeType
 ): Record<string, string | number> {
     const result: Record<string, string | number> = { ...obj1 };
     for (const key in obj2) {
@@ -24,18 +23,10 @@ export function mergeObjects(
                         result[key] = value2;
                     }
                     break;
-                case "custom":
-                    if (customMergeFn) {
-                        result[key] = customMergeFn(key, value1, value2);
-                    } else {
-                        throw new Error("Custom merge type requires a customMergeFn.");
-                    }
-                    break;
-
                 default:
                     throw new Error(`Unknown merge type: ${mergeType}`);
             }
         }
     }
     return result;
-}
+};
