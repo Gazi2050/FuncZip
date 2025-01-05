@@ -30,10 +30,3 @@ const testUniqueByKey3 = uniqueByKey(obj3, (employee) => employee.name);
 const testDifference1 = difference(arr1, arr2);
 //Symmetric Difference
 const testDifference2 = difference(arr1, arr2, true);
-console.log(testChunkArray);
-console.log(testAverageArray);
-console.log(testShuffleArray);
-console.log(testUniqueByKey1);
-console.log(testUniqueByKey2);
-console.log(testDifference1);
-console.log(testDifference2);

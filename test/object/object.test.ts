@@ -18,15 +18,3 @@ const deepMerged2 = mergeObjects(obj1, obj3, "deep"); //different key different 
 const deepMerged3 = mergeObjects(obj1, obj4, "deep"); //different key same type of value
 const deepMerged4 = mergeObjects(obj1, obj5, "deep"); //same key same type of value (number)
 const deepMerged5 = mergeObjects(obj2, obj6, "deep"); //same key same type of value (string)
-console.log('shallow');
-console.log(shallowMerged1);
-console.log(shallowMerged2);
-console.log(shallowMerged3);
-console.log(shallowMerged4);
-console.log(shallowMerged5);
-console.log('deep');
-console.log(deepMerged1);
-console.log(deepMerged2);
-console.log(deepMerged3);
-console.log(deepMerged4);
-console.log(deepMerged5);
