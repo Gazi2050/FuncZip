@@ -51,4 +51,4 @@ export function deepClone<T extends NestedObject>(obj: T): T {
         }
     }
     return clonedObj as T;
-}
+};
