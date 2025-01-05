@@ -1,4 +1,4 @@
-import { MergeType } from "./objectTypes";
+import { MergeType, NestedObject } from "./objectTypes";
 
 export function mergeObjects(
     obj1: Record<string, string | number>,
@@ -30,3 +30,25 @@ export function mergeObjects(
     }
     return result;
 };
+
+export function deepClone<T extends NestedObject>(obj: T): T {
+    if (obj === null || typeof obj !== 'object') {
+        return obj as T;
+    }
+    if (obj instanceof Date) {
+        return new Date(obj.getTime()) as unknown as T;
+    }
+    if (Array.isArray(obj)) {
+        return obj.map(item => deepClone(item as NestedObject)) as unknown as T;
+    }
+    const clonedObj: NestedObject = {};
+    for (const key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            const value = obj[key];
+            if (value !== undefined) {
+                clonedObj[key] = deepClone(value as NestedObject);
+            }
+        }
+    }
+    return clonedObj as T;
+}
